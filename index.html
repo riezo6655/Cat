@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+<!------ Sprite  ------>
+<svg style="display: none;">
+  <symbol id="logo" width="78" height="52" viewBox="0 0 78 52" fill="white" xmlns="http://www.w3.org/2000/svg" >
+      <g>
+      <path d="M63.0559 15.8815L54.2119 15.8947L27.8012 40.7922H10.0354V23.4593L34.2348 0.848633L17.993 0.899213L0 17.6625V51.151H34.0283L63.0418 23.5687L63.0559 15.8815Z"/>
+      <path d="M43.9721 0.848633L14.9586 28.4318L14.9453 36.1182L23.7884 36.1049L50.1991 11.2075H67.9649V28.5404L43.7656 51.151L60.0074 51.1013L78.0004 34.338V0.848633H43.9721Z"/>
+      </g>
+    </symbol>
+  <symbol id="like" width="46" height="42" viewBox="0 0 46 42"  xmlns="http://www.w3.org/2000/svg">
+      <g>
+      <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z"/>
+    </g>
+</svg>
+
+
+<!------ Header  ------>
+<header class="header" id="header">
+    <div class="container">
+      <div class="header_main">
+        <div class="header__inner">
+              <svg class="header__logo">
+                <use xlink:href="#logo"></use>
+              </svg>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#features">Главная</a>
+                <a class="nav__link" href="#" data-scroll="#works">Галлерея</a>
+                <a class="nav__link" href="#" data-scroll="#team">Новости</a>
+                <a class="nav__link" href="#" data-scroll="#reviews">Профиль</a>
+            </nav>
+
+            <div class="header__phone">
+              <div class="phone__title">+544 3490 00000</div> 
+              <div class="phone__subtitle">Звони скорее!</div>
+            </div>
+        </div>
+        <div class="header__suptitle" akhi="1000">Найдено <a class="value" akhi="349">0</a> котов</div>
+    </div>
+  </div>
+</header>
+
+
+<!------  Selection  ------>
+
+<div class="container">
+  <div class="selection">
+    <a class="selection__inner">Сортировать по:</a> 
+    <a class="selection__inner" href="#">Цене</a> 
+    <a class="selection__inner" href="#">Возрасту</a>
+  </div>
+</div>
+
+
+
+<!------  Article  ------>
+<div class="article">
+  <div class="container">
+    <div class="article__grid">
+    
+      <div class="article__item" href="#">
+        <div class="article__add">
+          <div class="article__sale">-40%</div>
+          <svg class="article__like">
+            <use xlink:href="#like" ></use>
+          </svg>
+        </div>
+        <img class="article__photo" src="images/cat/cat-1.png" alt="">
+          <div class="article__text">
+            <div class="article__info">Кот полосатый</div>
+              <div class="article__grid-title">
+                <div class="article__title1">Коричневый окрас</div>
+                <div class="article__title2">2 мес.</div>
+                <div class="article__title3">4</div>
+                <div class="article__title5">Возраст</div>
+                <div class="article__title6">Кол-во лап</div>
+              </div>
+            <div class="article__info">30 000 руб.</div>
+          </div>
+        <a class="btn btn--blue" href="#">Купить</a>  
+      </div>
+
+      <div class="article__item">
+        <div class="article__add">
+          <div></div>
+          <svg class="article__like like--bold">
+            <use xlink:href="#like"></use>
+          </svg>
+        </div>
+        <img class="article__photo" src="images/cat/cat-2.png" alt="">
+          <div class="article__text">
+            <div class="article__info">Кот полосатый</div>
+              <div class="article__grid-title">
+                <div class="article__title1">Коричневый окрас</div>
+                <div class="article__title2">2 мес.</div>
+                <div class="article__title3">4</div>
+                <div class="article__title5">Возраст</div>
+                <div class="article__title6">Кол-во лап</div>
+              </div>
+            <div class="article__info">40 000 руб.</div>
+          </div>
+        <a class="btn btn--gray" href="#">Продан</a> 
+      </div>
+
+      <div class="article__item">
+        <div class="article__add">
+          <div></div>
+          <svg class="article__like">
+            <use xlink:href="#like"></use>
+          </svg>
+        </div>
+        <img class="article__photo" src="images/cat/cat-3.png" alt="">
+          <div class="article__text">
+            <div class="article__info">Кот полосатый</div>
+              <div class="article__grid-title">
+                <div class="article__title1">Коричневый окрас</div>
+                <div class="article__title2">2 мес.</div>
+                <div class="article__title3">4</div>
+                <div class="article__title5">Возраст</div>
+                <div class="article__title6">Кол-во лап</div>
+              </div>
+            <div class="article__info">20 000 руб.</div>
+          </div>
+        <a class="btn btn--blue" href="#">Купить</a> 
+      </div>
+
+      <div class="article__item">
+        <div class="article__add">
+          <div></div>
+          <svg class="article__like">
+            <use xlink:href="#like" ></use>
+          </svg>
+        </div>
+        <img class="article__photo" src="images/cat/cat-2.png" alt="">
+          <div class="article__text">
+            <div class="article__info">Кот полосатый</div>
+              <div class="article__grid-title">
+                <div class="article__title1">Коричневый окрас</div>
+                <div class="article__title2">2 мес.</div>
+                <div class="article__title3">4</div>
+                <div class="article__title5">Возраст</div>
+                <div class="article__title6">Кол-во лап</div>
+              </div>
+            <div class="article__info">25 000 руб.</div>
+          </div>
+      <a class="btn btn--blue" href="#">Купить</a>  
+      </div>
+
+      <div class="article__item">
+        <div class="article__add">
+          <div class="article__sale">-40%</div>
+          <svg class="article__like">
+            <use xlink:href="#like" ></use>
+          </svg>
+        </div>
+        <img class="article__photo" src="images/cat/cat-3.png" alt="">
+          <div class="article__text">
+            <div class="article__info">Кот полосатый</div>
+              <div class="article__grid-title">
+                <div class="article__title1">Коричневый окрас</div>
+                <div class="article__title2">2 мес.</div>
+                <div class="article__title3">4</div>
+                <div class="article__title5">Возраст</div>
+                <div class="article__title6">Кол-во лап</div>
+              </div>
+            <div class="article__info">30 000 руб.</div>
+        </div>
+      <a class="btn btn--blue" href="#">Купить</a> 
+      </div>
+
+      <div class="article__item">
+        <div class="article__add">
+          <div></div>
+          <svg class="article__like like--bold">
+            <use xlink:href="#like"></use>
+          </svg>
+        </div>
+        <img class="article__photo" src="images/cat/cat-1.png" alt="">
+          <div class="article__text">
+            <div class="article__info">Кот полосатый</div>
+              <div class="article__grid-title">
+                <div class="article__title1">Коричневый окрас</div>
+                <div class="article__title2">2 мес.</div>
+                <div class="article__title3">4</div>
+                <div class="article__title5">Возраст</div>
+                <div class="article__title6">Кол-во лап</div>
+              </div>
+            <div class="article__info">10 000 руб.</div>
+          </div>
+      <a class="btn btn--gray" href="#">Продан</a> 
+      </div>
+    </div>
+    <div class="article__inner">
+      <a class="btn btn--white" href="#">Показать еще 20</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!------  Footer  ------>
+<footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__text">
+        <div class="footer__title">Успей купить!</div>
+        <div class="footer__subtitle">Подпишись и успей словить все акции</div>
+      </div>
+      <div class="footer__email">
+        <form class="subscribe" action="/" method="post">
+          <input class="subscribe__input" type="email" placeholder="Email...">
+          <button class="subscribe__btn" type="submit">Подписаться</button>
+        </form>
+        <!-- input#cbx.hidden-xs-up type="checkbox"/
+        <label.cbx for="cbx"></label.cbx>
+        <label.lbl for="cbx"> Подписаться на новости
+           -->
+           <div class="check__inner">
+              <input class="check" type="checkbox"> 
+              Подписаться на новости
+            </div> 
+      </div>
+    </div>
+    
+</footer>
+
+
+
+<!-- Javascript -->
+<script src="./app.js"></script>
+</body>
+</html>
